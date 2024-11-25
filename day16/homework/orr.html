@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+<center></center>
+    <h1>fill out this form</h1
+
+    <form action="/submit" method="post">
+        <label for="input1">first name</label>
+        <input type="text" id="input1" name="input1" value=""><br><br>
+
+        <label for="input2">last name</label>
+        <input type="text" id="input2" name="input2" value=""><br><br>
+
+        <label for="input3">nick name</label>
+        <input type="text" id="input3" name="input3" value=""><br><br>
+
+        <label for="input4">email</label>
+        <input type="email" id="input4" name="input4" value=""><br><br>
+
+        <label for="input5">password</label>
+        <input type="password" id="input5" name="input5" value=""><br><br>
+
+        <label for="input6">date of birth</label>
+        <input type="date" id="input6" name="input6" value=""><br><br>
+
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male"><br>
+
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female"><br>
+
+        <label for="other">Other</label>
+        <input type="radio" id="other" name="gender" value="other"><br>
+
+        <form action="/submit" method="post">
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile" 
+                   pattern="^\+?[1-9]\d{1,14}$" 
+                   placeholder="Enter your mobile number with country code (e.g., +1234567890)" 
+                   inputmode="tel" required><br><br>
+
+                   <form action="/submit" method="post">
+                    <!-- Street Address (textarea) -->
+                    <label for="street">Street Address:</label>
+                    <textarea id="street" name="street" placeholder="1234 Main St" rows="4" cols="50" required></textarea><br><br>
+            
+                    <!-- City -->
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" placeholder="City" required><br><br>
+            
+                    <!-- State -->
+                    <label for="state">State/Province:</label>
+                    <input type="text" id="state" name="state" placeholder="State" required><br><br>
+            
+                    <!-- Zip Code -->
+                    <label for="zip">Zip/Postal Code:</label>
+                    <input type="text" id="zip" name="zip" placeholder="12345" required><br><br>
+            
+                    <!-- Country (dropdown) -->
+                    <label for="country">Country:</label>
+                    <select id="country" name="country" required>
+                        <option value="US">United States</option>
+                        <option value="CA">Canada</option>
+                        <option value="GB">United Kingdom</option>
+                        <option value="GE">Georgia</option>
+                        <!-- Add more countries as needed -->
+                    </select><br><br>
+            
+                    <!-- Submit Button -->
+                    <button type="submit">Submit</button>
+                </form>
+
+</body>
+</html>

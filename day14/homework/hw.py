@@ -7,4 +7,4 @@ for i in range(10) :
     num3 = int(input("enter third number"))
 
     for i in range(num1, num2, num3) :
-        print(num1,num2,num3)
+        print()
