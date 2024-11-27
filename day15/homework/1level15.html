@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 Input Example</title>
+</head>
+<body>
+
+    <h1>ფორმა 10 input ტიპებით</h1>
+
+    <form action="#">
+        <!-- 1. ტექსტური ველი -->
+        <label for="text_input">სახელი (Text):</label>
+        <input type="text" id="text_input" name="name" placeholder="შეიტანეთ თქვენი სახელი" required><br><br>
+
+        <!-- 2. რიცხვი -->
+        <label for="number_input">ასაკი (Number):</label>
+        <input type="number" id="number_input" name="age" placeholder="შეიტანეთ თქვენი ასაკი" min="0" max="100"><br><br>
+
+        <!-- 3. ელ. ფოსტა -->
+        <label for="email_input">ელ. ფოსტა (Email):</label>
+        <input type="email" id="email_input" name="email" placeholder="შეიტანეთ თქვენი ელ. ფოსტა" required><br><br>
+
+        <!-- 4. პაროლი -->
+        <label for="password_input">პაროლი (Password):</label>
+        <input type="password" id="password_input" name="password" placeholder="შეიტანეთ პაროლი" required><br><br>
+
+        <!-- 5. რადიო ღილაკები -->
+        <label for="radio_input">გქვთ თუ არა ცხოველი (Radio):</label><br>
+        <input type="radio" id="yes" name="pet" value="yes">
+        <label for="yes">დიახ</label><br>
+        <input type="radio" id="no" name="pet" value="no">
+        <label for="no">არა</label><br><br>
+
+        <!-- 6. ჩასამოწმებელი კუთხოველბები -->
+        <label for="checkbox_input">დასთანხმება პირობებს (Checkbox):</label>
+        <input type="checkbox" id="terms" name="terms" value="accepted"> <label for="terms"> მე ვეთანხმები პირობებს</label><br><br>
+
+        <!-- 7. დრო -->
+        <label for="time_input">დრო (Time):</label>
+        <input type="time" id="time_input" name="appointment_time"><br><br>
+
+        <!-- 8. თარიღი -->
+        <label for="date_input">დაბადების თარიღი (Date):</label>
+        <input type="date" id="date_input" name="dob"><br><br>
+
+        <!-- 9. ფაილი -->
+        <label for="file_input">ფაილის ატვირთვა (File):</label>
+        <input type="file" id="file_input" name="file"><br><br>
+
+        <!-- 10. URL -->
+        <label for="url_input">ვებ-გვერდის URL (URL):</label>
+        <input type="url" id="url_input" name="website" placeholder="შეიტანეთ ვებ-გვერდი"><br><br>
+
+        <input type="submit" value="გაგზავნა">
+    </form>
+
+</body>
+</html>
