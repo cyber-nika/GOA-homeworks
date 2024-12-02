@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select {
+            padding: 8px;
+            margin: 5px;
+            width: 100%;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Application Form</h1>
+    <form id="application-form" action="#" method="post">
+        <!-- First Name -->
+        <div class="form-group">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required>
+        </div>
+
+        <!-- Last Name -->
+        <div class="form-group">
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required>
+        </div>
+
+        <!-- Age -->
+        <div class="form-group">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+        </div>
+
+        <!-- Date of Birth -->
+        <div class="form-group">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+
+        <!-- Gender -->
+        <div class="form-group">
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="Female" required>
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="Other" required>
+            <label for="other">Other</label>
+        </div>
+
+        <!-- Email Address -->
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <!-- Positions Available -->
+        <div class="form-group">
+            <label>Positions Available:</label><br>
+            <input type="checkbox" id="junior" name="position" value="Junior Developer">
+            <label for="junior">Junior Developer</label><br>
+            <input type="checkbox" id="mid" name="position" value="Mid Developer">
+            <label for="mid">Mid Developer</label><br>
+            <input type="checkbox" id="senior" name="position" value="Senior Developer">
+            <label for="senior">Senior Developer</label>
+        </div>
+
+        <!-- Programming Languages -->
+        <div class="form-group">
+            <label>Programming Languages:</label><br>
+            <input type="checkbox" id="java" name="languages" value="Java">
+            <label for="java">Java</label><br>
+            <input type="checkbox" id="javascript" name="languages" value="JavaScript">
+            <label for="javascript">JavaScript</label><br>
+            <input type="checkbox" id="python" name="languages" value="Python">
+            <label for="python">Python</label>
+        </div>
+
+        <!-- Password -->
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+
+        <!-- Confirm Password -->
+        <div class="form-group">
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+        </div>
+
+        <!-- Submit and Reset Buttons -->
+        <div class="form-group">
+            <button type="submit" onclick="return validatePassword()">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+
+    <script>
+        // Function to validate the password and confirm password fields
+        function validatePassword() {
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirm-password").value;
+            
+            if (password !== confirmPassword) {
+                alert("Passwords do not match!");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>
