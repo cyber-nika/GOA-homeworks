@@ -1,0 +1,5 @@
+my_list = [10, 20, 30, 40, 50, 60]
+half1 = my_list[:len(my_list)//2]
+half2 = my_list[len(my_list)//2:]
+print(half1)  # Output: [10, 20, 30]
+print(half2)  # Output: [40, 50, 60]

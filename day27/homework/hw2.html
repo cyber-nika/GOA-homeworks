@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inherited Text Color</title>
+    <style>
+        /* Parent div with text color */
+        .parent {
+            color: blue;
+        }
+
+        /* Override for one specific p element */
+        .child-override {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <p>This paragraph inherits the blue color from its parent div.</p>
+        <p class="child-override">This paragraph overrides the inherited color and is red.</p>
+    </div>
+</body>
+</html>

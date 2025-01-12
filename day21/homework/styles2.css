@@ -1,0 +1,13 @@
+/* Styling for the div with a solid border */
+.bordered-div {
+    border: 5px solid black;
+    padding: 20px;
+    width: 200px;
+    margin: 20px;
+}
+
+/* Styling for the image with a dotted border */
+.dotted-border {
+    border: 3px dotted blue;
+    padding: 10px;
+}

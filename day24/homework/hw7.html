@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadrants</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            height: 100vh;
+            width: 100%;
+        }
+        .quadrant {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: lightgray;
+            border: 2px solid black;
+        }
+        .quadrant:nth-child(1) {
+            background-color: lightblue;
+        }
+        .quadrant:nth-child(2) {
+            background-color: lightgreen;
+        }
+        .quadrant:nth-child(3) {
+            background-color: lightcoral;
+        }
+        .quadrant:nth-child(4) {
+            background-color: lightyellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="quadrant">Quadrant 1</div>
+        <div class="quadrant">Quadrant 2</div>
+        <div class="quadrant">Quadrant 3</div>
+        <div class="quadrant">Quadrant 4</div>
+    </div>
+</body>
+</html>

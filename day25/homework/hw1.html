@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetable Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #4CAF50;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .image-container {
+            margin: 10px;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        .reset-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .reset-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Vegetable Store!</h1>
+    <p>Click on the vegetables to see a different vegetable.</p>
+
+    <div class="gallery">
+        <div class="image-container">
+            <img src="carrot.jpg" alt="Carrot" onclick="changeImage(this)">
+        </div>
+        <div class="image-container">
+            <img src="tomato.jpg" alt="Tomato" onclick="changeImage(this)">
+        </div>
+        <div class="image-container">
+            <img src="broccoli.jpg" alt="Broccoli" onclick="changeImage(this)">
+        </div>
+    </div>
+
+    <button class="reset-button" onclick="resetImages()">Reset Images</button>
+
+    <script>
+        // Function to change the image when clicked
+        function changeImage(element) {
+            if (element.src.includes("carrot")) {
+                element.src = "onion.jpg";
+            } else if (element.src.includes("tomato")) {
+                element.src = "pepper.jpg";
+            } else if (element.src.includes("broccoli")) {
+                element.src = "cucumber.jpg";
+            }
+        }
+
+        // Function to reset images to their original state
+        function resetImages() {
+            const images = document.querySelectorAll("img");
+            images.forEach(img => {
+                if (img.alt === "Carrot") img.src = "carrot.jpg";
+                if (img.alt === "Tomato") img.src = "tomato.jpg";
+                if (img.alt === "Broccoli") img.src = "broccoli.jpg";
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+/* Styling for the heading */
+.heading {
+    color: blue;
+    background-color: yellow;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Styling for the button */
+.btn {
+    color: white;
+    background-color: red;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: darkred;
+}

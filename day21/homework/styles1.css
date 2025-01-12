@@ -1,0 +1,22 @@
+/* Styling for the heading (bold) */
+.bold-heading {
+    font-weight: bold;
+}
+
+/* Styling for the paragraphs with different font sizes */
+.small-text {
+    font-size: 12px;
+}
+
+.medium-text {
+    font-size: 16px;
+}
+
+.large-text {
+    font-size: 24px;
+}
+
+/* Styling for the lighter weight paragraph */
+.lighter-text {
+    font-weight: lighter;
+}

@@ -1,0 +1,26 @@
+p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+#header1 {
+    font-size: 30px;
+    color: blue;
+}
+
+.main-header {
+    font-family: 'Georgia', serif;
+    text-align: center;
+}
+
+button {
+    background-color: lightgray;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#box1 {
+    border: 1px solid black;
+    padding: 20px;
+}
