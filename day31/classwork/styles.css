@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+#button1 {
+    background-color: #FF5733;
+    color: #FFFFFF;
+}
+
+#button2 {
+    background-color: #33FF57;
+    color: #000000;
+}
+
+#button3 {
+    background-color: #3357FF;
+    color: #FFFFFF;
+}
