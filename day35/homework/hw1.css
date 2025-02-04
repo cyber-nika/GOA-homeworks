@@ -1,0 +1,24 @@
+table {
+    width: 100%;
+    border: 2px solid black; /* Border for the table */
+    border-collapse: collapse; /* Merge table borders */
+}
+
+th, td {
+    border: 1px solid black; /* Borders for table cells */
+    padding: 8px; /* Add some spacing inside cells */
+    text-align: left; /* Align text to the left */
+}
+
+th {
+    background-color: #f4b400; /* Background color for headers */
+    color: white; /* Text color for headers */
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light gray background for even rows */
+}
+
+tr:hover {
+    background-color: #ddd; /* Highlight row on hover */
+}
