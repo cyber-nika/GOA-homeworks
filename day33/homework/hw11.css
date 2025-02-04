@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'ButtonFont';
+    src: url('path-to-font/ButtonFont.woff2') format('woff2');
+  }
+  
+  button {
+    font-family: 'ButtonFont', sans-serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

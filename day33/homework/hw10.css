@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('path-to-font/CustomFont.woff2') format('woff2'),
+         url('path-to-font/CustomFont.ttf') format('truetype');
+  }
+  
+  h1, h2, h3 {
+    font-family: 'CustomFont', sans-serif;
+  }
+  

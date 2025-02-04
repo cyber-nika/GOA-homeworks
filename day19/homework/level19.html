@@ -1,9 +1,69 @@
-# მომხმარებლისგან ორი რიცხვის შეყვანა
-num1 = float(input("შეიყვანეთ პირველი რიცხვი: "))
-num2 = float(input("შეიყვანეთ მეორე რიცხვი: "))
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boss Level Website</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        nav { background-color: #333; padding: 10px; }
+        nav a { color: white; margin: 10px; text-decoration: none; }
+        footer { text-align: center; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#section1">Section 1</a>
+            <a href="#section2">Section 2</a>
+            <a href="#section3">Section 3</a>
+        </nav>
+    </header>
 
-# შედარება და უდიდესი რიცხვის დაბეჭდვა
-if num1 > num2:
-    print(f"უდიდესი რიცხვი არის: {num1}")
-else:
-    print(f"უდიდესი რიცხვი არის: {num2}")
+    <main>
+        <section id="section1">
+            <h2>Section 1</h2>
+            <p>This is some text in section 1.</p>
+            <ol>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ol>
+            <hr>
+        </section>
+
+        <section id="section2">
+            <h2>Section 2</h2>
+            <ul>
+                <li>Item A</li>
+                <li>Item B</li>
+                <li>Item C</li>
+            </ul>
+            <img src="image1.jpg" alt="Image 1">
+            <img src="image2.jpg" alt="Image 2">
+            <video controls>
+                <source src="video.mp4" type="video/mp4">
+            </video>
+            <hr>
+        </section>
+
+        <section id="section3">
+            <h2>Section 3</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/example" frameborder="0" allowfullscreen></iframe>
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+            </audio>
+            <form>
+                <label for="feedback">Your Feedback:</label>
+                <textarea id="feedback" name="feedback"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <hr>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#top">Return to Top</a>
+    </footer>
+</body>
+</html>

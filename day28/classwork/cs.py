@@ -1,2 +1,1 @@
-manual_index = "გამარჯობა მსოფლიო", "მსოფლიო"
-print(manual_index("გამარჯობა მსოფლიო", "მსოფლიო"))
+#no classwork we had a group work
