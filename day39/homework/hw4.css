@@ -1,0 +1,12 @@
+/* 4 - Error Message Styling */
+.error {
+    color: red;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+.error::before {
+    content: "\26A0"; /* Warning symbol */
+    margin-right: 5px;
+}
+

@@ -1,0 +1,6 @@
+/* 8 - Rounded Corners on a Box */
+.rounded-box {
+    border-radius: 10px;
+    border: 2px solid #333;
+    padding: 10px;
+}

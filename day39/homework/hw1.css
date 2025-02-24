@@ -1,0 +1,7 @@
+/* 1 - Input Fields Styling */
+input {
+    border: 2px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+    width: 100%;
+}
