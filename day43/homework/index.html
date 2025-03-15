@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: grid;
+            grid-template-columns: 1fr 200px 200px;
+            grid-template-rows: 80px 1fr 50px;
+            grid-template-areas:
+                "header header header"
+                "article aside nav"
+                "footer footer footer";
+            height: 100vh;
+        }
+        header {
+            grid-area: header;
+            background: navy;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+        }
+        nav {
+            grid-area: nav;
+            background: #ddd;
+            padding: 20px;
+        }
+        aside {
+            grid-area: aside;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+        article {
+            grid-area: article;
+            padding: 20px;
+            background: white;
+        }
+        footer {
+            grid-area: footer;
+            background: navy;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Website Header
+    </header>
+    <article>
+        <h1>Main Article</h1>
+        <p>Welcome to the main content section.</p>
+    </article>
+    <aside>
+        <h2>Sidebar</h2>
+        <p>Additional information here.</p>
+    </aside>
+    <nav>
+        <h2>Navigation</h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <footer>
+        Website Footer
+    </footer>
+</body>
+</html>

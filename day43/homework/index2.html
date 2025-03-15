@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 80px 200px 1fr 200px 50px;
+            grid-template-areas:
+                "header"
+                "hero"
+                "content"
+                "sidebar"
+                "footer";
+            height: 100vh;
+        }
+        header {
+            grid-area: header;
+            background: navy;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+        }
+        .hero {
+            grid-area: hero;
+            background: #007bff;
+            color: white;
+            text-align: center;
+            padding: 50px;
+            font-size: 28px;
+        }
+        .content {
+            grid-area: content;
+            padding: 20px;
+            background: white;
+        }
+        .sidebar {
+            grid-area: sidebar;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+        footer {
+            grid-area: footer;
+            background: navy;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Website Header
+    </header>
+    <div class="hero">
+        <h1>Hero Section</h1>
+        <p>Engaging tagline or image here.</p>
+    </div>
+    <div class="content">
+        <h1>Main Content</h1>
+        <p>Welcome to the main content section.</p>
+    </div>
+    <div class="sidebar">
+        <h2>Sidebar</h2>
+        <p>Additional information here.</p>
+    </div>
+    <footer>
+        Website Footer
+    </footer>
+</body>
+</html>

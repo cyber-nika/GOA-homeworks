@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Example</title>
+  <style>
+    .flex-container {
+      display: flex;
+      margin: 20px;
+    }
+
+    /* 3-12. Create a flex container with three items arranged in a row */
+    .flex-container {
+      justify-content: space-between; /* Distribute items evenly across the container with space between them */
+    }
+
+    .flex-item {
+      width: 100px;
+      height: 100px;
+      background-color: lightblue;
+      text-align: center;
+      line-height: 100px;
+    }
+
+    /* Align all flex items to the center of the container */
+    .flex-container {
+      justify-content: center; /* Align items to the center horizontally */
+      align-items: center; /* Align items to the center vertically */
+    }
+
+    /* Make one item grow twice as much as the others */
+    .flex-item.grow {
+      flex-grow: 2; /* The flex item will grow twice as much as the others */
+    }
+
+    /* Reverse the order of the flex items */
+    .flex-container.reverse {
+      flex-direction: row-reverse; /* Reverse the order of items */
+    }
+
+    /* Align one specific item to the bottom while keeping others at the top */
+    .flex-container.align-bottom {
+      align-items: flex-start; /* Align items at the top */
+    }
+
+    .flex-item.align-bottom {
+      align-self: flex-end; /* Align this specific item to the bottom */
+    }
+
+    /* Wrap items to the next line when the container is too small */
+    .flex-container.wrap {
+      flex-wrap: wrap; /* Allow items to wrap when the container is too small */
+    }
+
+    /* Center all items both horizontally and vertically */
+    .flex-container.center {
+      justify-content: center; /* Center items horizontally */
+      align-items: center; /* Center items vertically */
+    }
+
+    /* Set all items to have equal width regardless of content size */
+    .flex-container.equal-width {
+      width: 100%;
+    }
+
+    .flex-item.equal-width {
+      flex: 1; /* Make all items have equal width */
+    }
+
+    /* Change the direction of items to a vertical column */
+    .flex-container.column {
+      flex-direction: column; /* Arrange items in a column */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Example usage of Flexbox container with different styles -->
+  <div class="flex-container">
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item">Item 2</div>
+    <div class="flex-item">Item 3</div>
+  </div>
+
+  <!-- Add classes to try different scenarios -->
+  <div class="flex-container reverse">
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item">Item 2</div>
+    <div class="flex-item">Item 3</div>
+  </div>
+
+  <div class="flex-container wrap">
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item">Item 2</div>
+    <div class="flex-item">Item 3</div>
+  </div>
+
+  <div class="flex-container align-bottom">
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item">Item 2</div>
+    <div class="flex-item align-bottom">Item 3</div>
+  </div>
+
+  <div class="flex-container equal-width">
+    <div class="flex-item equal-width">Item 1</div>
+    <div class="flex-item equal-width">Item 2</div>
+    <div class="flex-item equal-width">Item 3</div>
+  </div>
+
+  <div class="flex-container column">
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item">Item 2</div>
+    <div class="flex-item">Item 3</div>
+  </div>
+
+  <!-- Centering items -->
+  <div class="flex-container center">
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item">Item 2</div>
+    <div class="flex-item">Item 3</div>
+  </div>
+
+  <!-- Grow an item twice -->
+  <div class="flex-container">
+    <div class="flex-item">Item 1</div>
+    <div class="flex-item grow">Item 2 (Grows)</div>
+    <div class="flex-item">Item 3</div>
+  </div>
+
+</body>
+</html>

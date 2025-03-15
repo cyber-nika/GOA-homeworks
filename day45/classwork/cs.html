@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Madrid Fan Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 80px 1fr 50px;
+            grid-template-areas: 
+                "header header"
+                "menu content"
+                "footer footer";
+            height: 100vh;
+        }
+        header {
+            grid-area: header;
+            background: navy;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+        }
+        nav {
+            grid-area: menu;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+        nav ul {
+            list-style: none;
+        }
+        nav ul li {
+            padding: 10px 0;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: navy;
+            font-weight: bold;
+        }
+        main {
+            grid-area: content;
+            padding: 20px;
+            background: white;
+        }
+        footer {
+            grid-area: footer;
+            background: navy;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Real Madrid Fan Page
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Squad</a></li>
+            <li><a href="#">Fixtures</a></li>
+            <li><a href="#">History</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Welcome to Real Madrid Fan Page</h1>
+        <p>Stay updated with the latest news, fixtures, and history of the greatest club in the world!</p>
+    </main>
+    <footer>
+        &copy; 2025 Real Madrid Fan Page
+    </footer>
+</body>
+</html>

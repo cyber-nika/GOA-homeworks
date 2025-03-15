@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: grid;
+            grid-template-columns: 200px 1fr 200px;
+            grid-template-rows: 80px 1fr 50px;
+            grid-template-areas:
+                "header header header"
+                "left-sidebar main-content right-sidebar"
+                "footer footer footer";
+            height: 100vh;
+        }
+        header {
+            grid-area: header;
+            background: navy;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+        }
+        .left-sidebar {
+            grid-area: left-sidebar;
+            background: #ddd;
+            padding: 20px;
+        }
+        .right-sidebar {
+            grid-area: right-sidebar;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+        .main-content {
+            grid-area: main-content;
+            padding: 20px;
+            background: white;
+        }
+        footer {
+            grid-area: footer;
+            background: navy;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Website Header
+    </header>
+    <div class="left-sidebar">
+        <h2>Left Sidebar</h2>
+        <p>Additional information here.</p>
+    </div>
+    <div class="main-content">
+        <h1>Main Content</h1>
+        <p>Welcome to the main content section.</p>
+    </div>
+    <div class="right-sidebar">
+        <h2>Right Sidebar</h2>
+        <p>Additional information here.</p>
+    </div>
+    <footer>
+        Website Footer
+    </footer>
+</body>
+</html>
