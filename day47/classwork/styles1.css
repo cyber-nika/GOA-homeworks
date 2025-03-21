@@ -1,0 +1,9 @@
+.custom-div {
+    width: 1000px;
+    height: 500px;
+    border-radius: 20px;
+    border: 5px solid black;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6No2_k7LngO4POXhYvsUstfS4WUtguqyrBQ&s');
+    background-size: cover;
+    background-position: center;
+}

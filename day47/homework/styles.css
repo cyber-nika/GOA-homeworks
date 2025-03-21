@@ -1,0 +1,107 @@
+/* Stick a Header at the Top */
+.fixed-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    z-index: 1000;
+}
+
+/* Fix a Footer to the Bottom */
+.fixed-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Center a Div Horizontally */
+.center-div {
+    width: 50%;
+    margin: 80px auto 20px;
+    background: lightblue;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Move an Image to the Right */
+.right-image {
+    display: block;
+    margin-left: auto;
+    width: 200px;
+}
+
+/* Move a Button to the Bottom of a Div */
+.button-container {
+    position: relative;
+    height: 150px;
+    background: lightgray;
+    padding: 20px;
+}
+.button-container button {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Place Text Over an Image */
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+.image-container img {
+    width: 100%;
+    max-width: 400px;
+}
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+}
+
+/* Move a Box Slightly Up */
+.move-up {
+    position: relative;
+    top: -10px;
+    background: coral;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Align Two Elements Side by Side */
+.side-by-side-container {
+    display: flex;
+    gap: 20px;
+}
+.box {
+    width: 50%;
+    background: lightgreen;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Float an Image to the Left */
+.float-left img {
+    float: left;
+    margin-right: 10px;
+    width: 150px;
+}
+
+/* Add Space Between Two Elements */
+.spaced-elements {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: lightyellow;
+}
