@@ -1,0 +1,96 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+.btn-hover {
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.btn-hover:hover {
+    background-color: darkblue;
+}
+.link-hover {
+    color: red;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.link-hover:hover {
+    color: darkred;
+}
+.img-scale {
+    width: 150px;
+    transition: transform 0.3s;
+}
+.img-scale:hover {
+    transform: scale(1.1);
+}
+.text-hover {
+    font-size: 18px;
+    transition: color 0.3s;
+}
+.text-hover:hover {
+    color: purple;
+}
+.border-anim {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    transition: border-width 0.3s;
+}
+.border-anim:hover {
+    border-width: 6px;
+}
+.btn-press {
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+.btn-press:active {
+    transform: scale(0.95);
+}
+.opacity-trans {
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    transition: opacity 0.3s;
+}
+.opacity-trans:hover {
+    opacity: 0.5;
+}
+.padding-anim {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    transition: padding 0.3s;
+}
+.padding-anim:hover {
+    padding: 20px;
+}
+.rotate-effect {
+    font-size: 30px;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+.rotate-effect:hover {
+    transform: rotate(10deg);
+}
+.shadow-anim {
+    width: 150px;
+    height: 100px;
+    background-color: white;
+    box-shadow: 2px 2px 5px gray;
+    transition: box-shadow 0.3s;
+}
+.shadow-anim:hover {
+    box-shadow: 5px 5px 15px black;
+}
