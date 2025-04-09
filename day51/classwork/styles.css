@@ -1,0 +1,28 @@
+div {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 3s ease-in-out;
+}
+
+div:hover {
+    animation: bg-and-deg-change 3s forwards;
+}
+
+@keyframes bg-and-deg-change {
+    0% {
+        background-color: black;
+        transform: rotate(0deg);
+    }
+    50% {
+        background-color: green;
+        transform: rotate(180deg);
+    }
+    100% {
+        background-color: blue;
+        transform: rotate(180deg);
+    }
+}

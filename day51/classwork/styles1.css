@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+}
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    animation: moveShrink 4s infinite ease-in-out;
+}
+@keyframes moveShrink {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+    25% {
+        transform: translateY(-100px) scale(0.5);
+    }
+    50% {
+        transform: translate(100px, -100px) scale(0.7);
+    }
+    75% {
+        transform: translate(200px, -50px) scale(1.2);
+    }
+    100% {
+        transform: translate(0) scale(1);
+    }
+}

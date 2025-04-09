@@ -1,0 +1,69 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  h1 {
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  .box {
+    width: 220px;
+    height: 60px;
+    background-color: #4e91fc;
+    color: white;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  /* Animation Definitions */
+  @keyframes fadeIn {
+    from { opacity: 0.3; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideInLeft {
+    from { transform: translateX(-100px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+  
+  @keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+  /* Trigger classes (applied via JS) */
+  .fade-in.animate {
+    animation: fadeIn 0.6s ease;
+  }
+  
+  .slide-in.animate {
+    animation: slideInLeft 0.6s ease;
+  }
+  
+  .bounce.animate {
+    animation: bounce 0.6s ease;
+  }
+  
+  .rotate.animate {
+    animation: rotate 0.6s linear;
+  }
+  
