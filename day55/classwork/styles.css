@@ -1,0 +1,16 @@
+@keyframes example {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100px);
+    }
+  }
+  
+  .element {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    animation: example 5s linear infinite;
+  }
+  

@@ -1,0 +1,81 @@
+/* Overall grid container setup */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Sidebar (1fr) + Main Content (3fr) */
+    grid-template-rows: auto 1fr auto; /* Header (auto) + Content (1fr) + Footer (auto) */
+    grid-template-areas: 
+      "header header"
+      "sidebar content1 content2 content3"
+      "footer footer footer footer"; /* Define the areas */
+    gap: 20px;
+  }
+  
+  /* Header styling */
+  .header {
+    grid-area: header;
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  /* Content 1 styling */
+  .content1 {
+    grid-area: content1;
+    background-color: lightcoral;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Content 2 styling */
+  .content2 {
+    grid-area: content2;
+    background-color: lightgreen;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Content 3 styling */
+  .content3 {
+    grid-area: content3;
+    background-color: lightyellow;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Sidebar styling */
+  .sidebar {
+    grid-area: sidebar;
+    background-color: lightgray;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Footer styling */
+  .footer {
+    grid-area: footer;
+    background-color: lightseagreen;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  /* Make the layout responsive */
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr; /* Stack all elements in one column */
+      grid-template-areas: 
+        "header"
+        "content1"
+        "content2"
+        "content3"
+        "sidebar"
+        "footer";
+    }
+    
+    /* Adjust the content sections when stacked */
+    .content1, .content2, .content3, .sidebar {
+      text-align: left; /* Align text to the left on small screens */
+    }
+  }
+  

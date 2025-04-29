@@ -1,0 +1,131 @@
+/* General layout and styling for all boxes */
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .box, .bg-box, .rotating, .pulse, .ball, .spinner, .once, .delayed-start, 
+  .seq-1, .seq-2, .seq-3, .fade-slow {
+    width: 100px;
+    height: 100px;
+    background: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  /* Moves a box from left to right */
+  @keyframes moveRight {
+    from { transform: translateX(0); }
+    to { transform: translateX(200px); }
+  }
+  
+  .box {
+    animation: moveRight 2s linear;
+  }
+  
+  /* Fades background color from blue to red */
+  @keyframes bgColorChange {
+    from { background-color: blue; }
+    to { background-color: red; }
+  }
+  
+  .bg-box {
+    animation: bgColorChange 5s forwards;
+  }
+  
+  /* Rotates an element 360 degrees */
+  @keyframes rotate360 {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+  .rotating {
+    animation: rotate360 2s linear;
+  }
+  
+  /* Creates a pulsing (scaling) effect */
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+  }
+  
+  .pulse {
+    animation: pulse 1s infinite;
+  }
+  
+  /* Bounces up and down 3 times */
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-100px); }
+  }
+  
+  .ball {
+    animation: bounce 1s ease-in-out 3;
+    background-color: orange;
+    border-radius: 50%;
+  }
+  
+  /* Spins forever like a loading icon */
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+  .spinner {
+    animation: spin 1s linear infinite;
+    border: 5px solid lightgray;
+    border-top: 5px solid teal;
+    border-radius: 50%;
+  }
+  
+  /* Fades in just once */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .once {
+    animation: fadeIn 2s forwards;
+  }
+  
+  /* For toggling between loop and single animations */
+  .no-loop {
+    animation: pulse 1s 1;
+  }
+  
+  /* Slides in from below after a 2-second delay */
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .delayed-start {
+    animation: slideIn 1s ease 2s forwards;
+  }
+  
+  /* Sequential fade-in using delays */
+  @keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .seq-1 { animation: fade 1s ease 0s forwards; }
+  .seq-2 { animation: fade 1s ease 1s forwards; }
+  .seq-3 { animation: fade 1s ease 2s forwards; }
+  
+  /* Fades in and out over 10 seconds */
+  @keyframes fadeInOut {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+  }
+  
+  .fade-slow {
+    animation: fadeInOut 10s linear;
+  }
+  
