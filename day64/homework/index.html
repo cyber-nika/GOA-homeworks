@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Interactive Page</title>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h1 id="fullNameDisplay">Your full name will appear here</h1>
+  <p id="userMessage">Your message will appear here.</p>
+
+  <!-- Text input form -->
+  <form id="textForm">
+    <label>Enter something:</label>
+    <input type="text" id="textInput" />
+    <button type="button" onclick="showTextInput()">Show Alert</button>
+  </form>
+
+  <!-- Color picker form -->
+  <form id="colorForm">
+    <label>Select background color:</label>
+    <input type="color" id="colorPicker" />
+    <button type="submit">Change Background</button>
+  </form>
+
+  <!-- Name combination form -->
+  <form id="nameForm">
+    <label>First Name:</label>
+    <input type="text" id="firstNameInput" />
+    <label>Last Name:</label>
+    <input type="text" id="lastNameInput" />
+    <button type="button" onclick="combineNames()">Display Full Name</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Manipulation</title>
+  <style>
+    #box {
+      width: 200px;
+      height: 100px;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sample elements -->
+  <h1 id="header">Main Header</h1>
+  <p id="description">This is the description.</p>
+  <footer id="footer">Footer content</footer>
+  <h2 id="title">Page Title</h2>
+  <div id="greeting">Hello there!</div>
+  <div id="note">This note will be cleared.</div>
+  <h2 id="heading">Heading to Style</h2>
+  <div id="box">Color this box</div>
+  <p id="paragraph">Resize this text.</p>
+
+  <script>
+    // 2) Get the HTML element with the ID header and store it in a variable
+    const header = document.getElementById('header');
+
+    // 3) Use getElementById to find the element with the ID description
+    const description = document.getElementById('description');
+
+    // 4) Retrieve the element with the ID footer and assign it to a variable named footerElement
+    const footerElement = document.getElementById('footer');
+
+    // 5) Get the text content of the element with the ID title and store it in a variable
+    const titleText = document.getElementById('title').textContent;
+
+    // 6) Change the text content of the element with the ID greeting to say "Welcome!"
+    document.getElementById('greeting').textContent = "Welcome!";
+
+    // 7) Set the text content of the element with the ID note to be empty
+    document.getElementById('note').textContent = "";
+
+    // 8) Change the text color of the element with the ID heading to red
+    document.getElementById('heading').style.color = "red";
+
+    // 9) Set the background color of the element with the ID box to yellow
+    document.getElementById('box').style.backgroundColor = "yellow";
+
+    // 10) Make the font size of the element with the ID paragraph equal to 20px
+    document.getElementById('paragraph').style.fontSize = "20px";
+
+    // Optional: log values to verify
+    console.log("Title text:", titleText);
+    console.log({ header, description, footerElement });
+  </script>
+</body>
+</html>
