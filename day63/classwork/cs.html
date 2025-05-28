@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>ტექსტის განლაგება</title>
+  <style>
+    #myElement {
+      width: 300px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="myElement">click bro click</div>
+
+  <script>
+    function changeTextAlignmentById(id) {
+      const element = document.getElementById(id);
+      if (!element) return;
+
+      const currentAlignment = element.style.textAlign;
+      switch (currentAlignment) {
+        case 'left':
+          element.style.textAlign = 'center';
+          break;
+        case 'center':
+          element.style.textAlign = 'right';
+          break;
+        case 'right':
+          element.style.textAlign = 'left';
+          break;
+        default:
+          element.style.textAlign = 'center';
+      }
+    }
+
+    document.getElementById('myElement').addEventListener('click', function () {
+      changeTextAlignmentById('myElement');
+    });
+  </script>
+
+</body>
+</html>

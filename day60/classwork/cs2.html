@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cs3</title>
+</head>
+<body>
+
+    <h2>Initial Values</h2>
+    <p id="initial"></p>
+
+    <h2>Updated Values</h2>
+    <p id="updated"></p>
+
+    <script>
+        let a = 10;
+        let b = 20;
+        let c = 30;
+
+        document.getElementById("initial").innerText = `a = ${a}, b = ${b}, c = ${c}`;
+
+        a = 100;
+        b = 200;
+        c = 300;
+
+        document.getElementById("updated").innerText = `a = ${a}, b = ${b}, c = ${c}`;
+    </script>
+
+</body>
+</html>
